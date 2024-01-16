@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conssumer API</title>
+    <link rel="stylesheet" href="Lib/bootstrap-5.3.2/Css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="">Consumindo a API do SuperHero</div> <br>
+
+    <div class="" id="">
+        <input type="button" value="Add SuperHero" class="btn btn-success" id="AddSuperHero">
+        <br><br>
+        <div class="" id="">
+            <form id="formAddSuperHero">
+
+                <label for="Name"> Name
+                    <input type="text" id="txtAddName" class="form-control">
+                </label>
+                <label for="FirstName"> First Name
+                    <input type="text" id="txtAddFirstName" class="form-control">
+                </label>
+                <label for="LastName"> Last Name
+                    <input type="text" id="txtAddLastName" class="form-control">
+                </label>
+                <label for="Place"> Place
+                    <input type="text" id="txtAddPlace" class="form-control">
+                </label>
+
+            </form>
+        </div>
+    </div> <br><br>
+
+    <div class="" id="">
+        <input type="button" value="Get All SuperHero" class="btn btn-primary" id="btnGetAllSuperHero">
+        <br><br>
+        <div class="" id="ListAllSuperHero">
+
+        </div>
+    </div>
+
+    <div class="" id="">
+        <input type="button" value="Get SuperHero by Id" class="btn btn-secondary" id="btnGetSuperHeroById">
+        <br><br>
+        <label for="Id"> Id
+            <input type="text" id="txtGetSuperHeroById" class="form-control">
+        </label>
+        <div class="" id="ListSuperHero">
+        </div>
+    </div> <br>
+
+    <div class="" id="">
+        <input type="button" value="Delete SuperHero by Id" class="btn btn-danger" id="btnDeleteSuperHeroById">
+        <br><br>
+        <label for="Id"> Id
+            <input type="text" id="txtGetSuperHeroByIdDelete" class="form-control">
+        </label>
+    </div> <br><br>
+
+    <div class="" id="">
+        <input type="button" value="Update SuperHero" class="btn btn-warning" id="UpdateSuperHero">
+        <br><br>
+        <div class="" id="ListSuperHero">
+            <form id="formUpdateSuperHero">
+
+                <label for="Id"> Id
+                    <input type="text" id="txtGetSuperHeroByIdUpdate" class="form-control">
+                </label>
+
+                <label for="Name"> Name
+                    <input type="text" id="txtUpdateName" class="form-control">
+                </label>
+                <label for="FirstName"> First Name
+                    <input type="text" id="txtUpdateFirstName" class="form-control">
+                </label>
+                <label for="LastName"> Last Name
+                    <input type="text" id="txtUpdateLastName" class="form-control">
+                </label>
+                <label for="Place"> Place
+                    <input type="text" id="txtUpdatePlace" class="form-control">
+                </label>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="Lib/bootstrap-5.3.2/Js/bootstrap.min.js"></script>
+    <script type="" src="consummer.js"></script>
+    <script type="" src="Controller.js"></script>
+
+    <!-- <script>
+
+
+        let data = "...";
+        let obj = {
+
+        }
+        const AddHero = async () => {
+            // data = await Consummer("Post", obj, "SuperHero/1");
+        }
+
+        const GetAllHeroes = async () => {
+            console.log(data = await RequestGet("getallsuperheroes",1));
+        }
+
+        const GetHeroe = async (id) => {
+            // data = await Consummer("Get", obj, "SuperHero/1" + id);
+        }
+
+        const UpdatHero = async () => {
+            // data = await Consummer("Update", obj, "SuperHero/1");
+        }
+
+        const DeleteHero = async () => {
+            // data = await Consummer("Delete", obj, "SuperHero/1");
+        }
+
+        GetAllHeroes();        
+    </script> -->
+
+</body>
+
+</html>
